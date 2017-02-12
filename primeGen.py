@@ -13,9 +13,9 @@ def isPrime(a):
 
 
 
-buff = 6
+buff = 284657
 cont = 0
-for i in range(113657, 1000000000000000000):
+for i in range(284657, 1000000000000000000):
     cont += 1
     if cont % 500 == 0:
         print(cont)

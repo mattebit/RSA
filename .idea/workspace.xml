@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5cb9798-e962-4cf5-9ade-e961aa3a533a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prime.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qEpGen.py" afterPath="$PROJECT_DIR$/qEpGen.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prime.txt" afterPath="$PROJECT_DIR$/prime.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/primeGen.py" afterPath="$PROJECT_DIR$/primeGen.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +33,8 @@
       <file leaf-file-name="primeGen.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/primeGen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state relative-caret-position="374">
+              <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -45,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/prime.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="8183" lean-forward="false" selection-start-line="5" selection-start-column="8177" selection-end-line="5" selection-end-column="8183" />
+              <caret line="5" column="106527" lean-forward="true" selection-start-line="5" selection-start-column="106527" selection-end-line="5" selection-end-column="106533" />
               <folding />
             </state>
           </provider>
@@ -363,15 +362,15 @@
     <entry file="file://$PROJECT_DIR$/prime.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="8183" lean-forward="false" selection-start-line="5" selection-start-column="8177" selection-end-line="5" selection-end-column="8183" />
+          <caret line="5" column="106527" lean-forward="true" selection-start-line="5" selection-start-column="106527" selection-end-line="5" selection-end-column="106533" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/primeGen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="374">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
           <folding />
         </state>
       </provider>
