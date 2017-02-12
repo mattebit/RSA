@@ -1,11 +1,7 @@
 import random
 from math import sqrt; from itertools import count, islice
 
-class qEpGen:
-    def __init__(self):
-        self.p = 0
-        self.q = 0
-
+class primeGen:
     def calcPrim(self, cifre):
         num = "1"
         for i in range(1, cifre):
@@ -18,18 +14,31 @@ class qEpGen:
 ##                self.
 
         cond = True
+
+        MAX = ""
+
+        for i in str(num):
+            MAX += "9"
+
+        MAX = int(MAX)
+
+        print(MAX)
+
+        cont = 0
         while cond:
-            cc = random.randint(num, int("9" + str(num).split("1")[1]))
+            cc = random.randint(num, MAX)
+            cont += 1
+            if cont%100 == 0:
+                print (cont)
+
             if self.isPrime(cc):
-                self.p = cc
-                cond = False
-        
+                print(cc)
+                return cc
 
-    def isPrime(self, n):
-        return n > 1 and all(n%i for i in islice(count(2), int(sqrt(n)-1)))
+    def isPrime(self, a):
+        return all(a % i for i in range(2, a))
     
-a = qEpGen()
+a = primeGen()
 
-a.calcPrim(30)
+print(a.calcPrim(30))
 
-print(a.p)
