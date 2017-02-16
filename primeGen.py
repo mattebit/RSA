@@ -3,7 +3,7 @@ from math import sqrt;
 from itertools import count, islice
 
 
-class qEpGen:
+class primeGen:
 
     def calcPrim(self, cifre):
         num = "1"
