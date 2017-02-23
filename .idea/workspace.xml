@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="0b5f3dbf-3247-4c68-8046-4865e2d8cc1a" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prova.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/RSA.iml" afterPath="$PROJECT_DIR$/.idea/RSA.iml" />
@@ -9,6 +10,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textNum.py" afterPath="$PROJECT_DIR$/textNum.py" />
     </list>
+=======
+    <list default="true" id="0b5f3dbf-3247-4c68-8046-4865e2d8cc1a" name="Default" comment="" />
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
