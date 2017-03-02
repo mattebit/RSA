@@ -19,12 +19,12 @@ def numToText(num): # Z27
     res = num % 400
     l.append(res)
     while num != 0:
-        num, res = _calculation(num, res, 400)
+        num, res = calculation(num, res, 400)
         l.append(res)
     l.remove(0)
     return "".join([chr(i) for i in reversed(l)])
 
-def _calculation(t, k, m):  
+def calculation(t, k, m):  
     n = (t - k) // m
     q = n % m
     return n, q

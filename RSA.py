@@ -10,31 +10,31 @@ def generateKeys(k): # RSA
     q = primeGen.calcPrim(k)
     n = p*q
     pn = (p-1)*(q-1)
-    e = _calcE(pn, k)
-    d = _calcD(e, pn)
+    e = calcoloE(pn, k)
+    d = calcoloD(e, pn)
     return n, e, d
 
-def encrypt(num, e, n): # Cifra
+def cifra(num, e, n): 
     return pow(num, e, n)
 
-def decrypt(num, d, n): # Decifra
+def decifra(num, d, n): 
     return pow(num, d, n)
 
-def _calcE(pn, k): # Calcola e partendo da P(n) e langhezza minima
+def calcoloE(pn, k): # Calcola e partendo da P(n) e langhezza minima
     while True:
         n = random.randint(pow(2, (k-1)), pn)
-        if _mcd(n, pn) == 1:
+        if MCD(n, pn) == 1:
             return n
         
-def _calcD(pn, e):
-    return _inverse(pn, e)
+def calcoloD(pn, e):
+    return inverse(pn, e)
         
-def _mcd(a, b): # Massimo comune divisore
+def MCD(a, b):
     while b:
         a, b = b, a%b
     return a
 
-def _inverse(a, n): # Extended Ecluidian Algorithm
+def inverse(a, n): # Extended Ecluidian Algorithm
     t = 0; newt = 1
     r = n; newr = a;
     while newr != 0:
@@ -44,22 +44,6 @@ def _inverse(a, n): # Extended Ecluidian Algorithm
     if r > 1: return "Invertible Number"
     if t < 0: t = t + n
     return t
-        
-    
-##    if __name__ == '__main__': # PROVA
-##        debug = True
-##        if debug:
-##            n, e, d = generateKeys(1024) # Lunghezza in bit della chiave
-##            tchiaro = "I am maxrode"
-##            print("N: %s... \nE: %s... \nD: %s..."%(str(n)[:16], str(e)[:16], str(d)[:16]))
-##            print("Testo in chiaro: %s"%(tchiaro))
-##            numero = text2num(tchiaro)
-##            print("Testo in numero: %s"%(numero))
-##            nCriptato = encrypt(numero, e, n)
-##            print("Numero criptato: %s..."%(str(nCriptato)[:16]))
-##            nDecriptato = decrypt(nCriptato, d, n)
-##            print("Numero decriptato: %s"%(nDecriptato))
-##            print("Numero in testo: %s"%(num2text(nDecriptato)))
 
 n, e, d = generateKeys(30)
 print("n: " + str(n)[:15] + "...")
@@ -72,10 +56,10 @@ print("Testo in chiaro: " + testoInChiaro[:15] + "...")
 testoInNumero = textNum.textToNum(testoInChiaro)
 print("Testo in numero: " + str(testoInNumero)[:15] + "...")
 
-numeroCifrato = encrypt(testoInNumero, e, n)
+numeroCifrato = cifra(testoInNumero, e, n)
 print("Numero cifrato: " + str(numeroCifrato)[:15] + "...")
 
-numeroDecifrato = decrypt(numeroCifrato, d, n)
+numeroDecifrato = decifra(numeroCifrato, d, n)
 print("Numero decifrato: " + str(numeroDecifrato)[:15] + "...")
 
 numeroInTesto = textNum.numToText(numeroDecifrato)
