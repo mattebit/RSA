@@ -2,9 +2,6 @@ import random
 from math import sqrt;
 from itertools import count, islice
 
-
-
-
 def calcPrim(cifre):
     num = "1"
     for i in range(1, cifre):

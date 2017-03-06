@@ -1,31 +1,31 @@
 import primeGen
 import time
+import sys
 
-prime = primeGen.primeGen()
+args = sys.argv
 
-# print(prime.calcPrim(1024))
+NOME_FILE = args[1]
+FROM = int(args[2])
+TO = int(args[3])
 
-f = open("prime.txt", "r")
-
+f = open(NOME_FILE, "r")
 fileBuff = f.read()
-
-f = open("prime.txt", "w")
-
+f = open(NOME_FILE, "w")
 f.write(fileBuff)
 
 t = time.time()
 
-buff = 60000000
+buff = FROM
 cont = 0
 
-for i in range(60000000, 70000000):
-
+for i in range(FROM, TO):
     cont += 1
     if cont % 5000 == 0:
         t = time.time() -t
         print(str(i) + " Tempo: " + str(t))
         t = time.time()
 
-    if prime.isPrime(i):
+    if primeGen.isPrime(i):
         f.write(str(i) + ",")
 
+f.close()
