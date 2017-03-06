@@ -20,7 +20,7 @@ cont = 0
 
 for i in range(FROM, TO):
     cont += 1
-    if cont % 5000 == 0:
+    if cont % 50000 == 0:
         t = time.time() -t
         print(str(i) + " Tempo: " + str(t))
         t = time.time()
